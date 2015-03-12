@@ -20,7 +20,7 @@ var articles = [
   	},
   	{
   		title : "my second entry",
-  		body : "blabla",
+  		body : "blablabalbal",
   		date : new Date(2015,3,3)
   	}
   	];
@@ -28,7 +28,10 @@ return {
 
 	getArticles : function( startDate){
 		return $filter('isAfter')(articles,startDate);
-	}
+	},
+  addArticle : function(newArticle){
+    articles.push(newArticle);
+  }
 
 }
 });

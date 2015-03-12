@@ -1,0 +1,18 @@
+<form>
+  <h2>Create New Entry</h2>
+  <fieldset>
+    <label>
+      Title
+      <input ng-model="ctrl.article.title">
+    </label>
+    <label>
+      Date
+      <input type='date' ng-model="ctrl.article.date">
+    </label>
+    <label>
+      Content
+      <input ng-model="ctrl.article.body">
+    </label>
+    <button ng-click="ctrl.save()">Save</button>
+  </fieldset>
+</form>

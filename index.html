@@ -11,29 +11,16 @@
 
 	</div>
 
-	<myapp-login-form >
-	</myapp-login-form >
-
-
-	<div ng-controller="BlogHistoryControler as blogHistoryCtrl">
-		<div ng-repeat="article in blogHistoryCtrl.articles">
-			<h2> {{article.title}} </h2>
-			<div>{{article.date | date:'d MMM, y' }}</div>
-			<div>{{article.body}}</div>
-		</div>
-		<br/>
-		<label> Showing results from {{blogHistoryCtrl.currentStartDate | date:'d MMM, y'}} to {{blogHistoryCtrl.currentEndDate | date:'d MMM, y'}} </label> 
-		<button ng-click="blogHistoryCtrl.loadMore()">Load older entries</button>
+	<div myapp-login-form >
 	</div>
-
-	<div>
-		
+	<div myapp-blog-history >
 	</div>
 
 
 
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/database_connector.js"></script>
+<script type="text/javascript" src="js/add_entry.js"></script>
 <script type="text/javascript" src="js/blog_history.js"></script>
 <script type="text/javascript" src="js/login_form.js"></script>
 

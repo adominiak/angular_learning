@@ -1,8 +1,9 @@
 angular.module('myAppLoginForm', [])
   .directive('myappLoginForm', function() {
     return {
+      restrict: 'AE',
       scope: {},
-      templateUrl: '../my_app_login.html',
+      templateUrl: 'html/my_app_login.html',
       replace: true,
       controller: 'LoginFormControler',
       controllerAs: 'ctrl'
@@ -17,4 +18,5 @@ angular.module('myAppLoginForm', [])
   });
 
 
-angular.module('myApp', ['myAppLoginForm', 'blogHistory']);
+
+angular.module('myApp', ['myAppLoginForm', 'myAppBlogEntryForm', 'blogHistory']);

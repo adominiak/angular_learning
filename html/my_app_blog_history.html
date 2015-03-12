@@ -1,0 +1,16 @@
+	<div >
+		<div ng-repeat="article in ctrl.articles">
+			<h2> {{article.title}} </h2>
+			<div>{{article.date | date:'d MMM, y' }}</div>
+			<div>{{article.body}}</div>
+		</div>
+		<br/>
+		<label> Showing results from {{ctrl.currentStartDate | date:'d MMM, y'}} to {{ctrl.currentEndDate | date:'d MMM, y'}} </label> 
+		<button ng-click="ctrl.loadMore()">Load older entries</button>
+		<br/>
+		<button ng-click="ctrl.refresh()">Refresh</button>
+
+
+		 <myapp-blog-entry-form add-article="ctrl.addArticle">
+  		 </myapp-blog-entry-form>
+	</div>

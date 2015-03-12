@@ -1,18 +1,20 @@
-<form>
-  <h2>Login</h2>
-  <fieldset>
-    <label>
-      User name
-      <input type ="text" ng-model="ctrl.username">
-    </label>
-    <label>
-      Password
-      <input type ="password" ng-model="ctrl.password">
-    </label>
-    <button ng-click="ctrl.login()">Login</button>
-  </fieldset>
-</form>
+<div>
+  <form>
+    <h2>Login</h2>
+    <fieldset>
+      <label>
+        User name
+        <input type ="text" ng-model="ctrl.username">
+      </label>
+      <label>
+        Password
+        <input type ="password" ng-model="ctrl.password">
+      </label>
+      <button ng-click="ctrl.login()">Login</button>
+    </fieldset>
+  </form>
 
-<label ng-model="ctrl.response">
-	Enter username and password to continue
-</label>
+  <label ng-model="ctrl.response">
+  	Enter username and password to continue
+  </label>
+</div>
